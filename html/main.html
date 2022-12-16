@@ -46,7 +46,7 @@ data-template="vertical-menu-template-free"
   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   
   <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-  
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
@@ -379,12 +379,15 @@ data-template="vertical-menu-template-free"
             <div class="card">
               <div class="d-flex align-items-end row">
                 <div class="col-sm-12">
+                  <div class="bg-primary mb-3 card-header pb-2">
+                    <h4 class="card-title text-white">⚙ Engines </h4>
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title text-primary">Mesin 1 Diaktifkan 🎉</h5>
                     <div class="table-responsive text-nowrap mb-4">
-                      <table class="table">
+                      <table class="table" id="myTable">
                         <thead>
                           <tr>
+                            <th></th>
                             <th>Mesin</th>
                             <th>Status</th>
                             <th>Actions</th>
@@ -392,6 +395,7 @@ data-template="vertical-menu-template-free"
                         </thead>
                         <tbody>
                           <tr>
+                            <td><i class="fas fa-check-circle text-success"></i> </td>
                             <td>
                               <strong>Mesin 1</strong>
                             </td>
@@ -403,6 +407,7 @@ data-template="vertical-menu-template-free"
                             </td>
                           </tr>
                           <tr>
+                            <td><i class="fas fa-times-circle text-danger"></i></td>
                             <td>
                               <strong>Mesin 2</strong>
                             </td>
@@ -414,6 +419,7 @@ data-template="vertical-menu-template-free"
                             </td>
                           </tr>
                           <tr>
+                            <td><i class="fas fa-times-circle text-danger"></i></td>
                             <td>
                               <strong>Mesin 3</strong>
                             </td>
@@ -439,12 +445,12 @@ data-template="vertical-menu-template-free"
                   <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between">
                       <div class="avatar flex-shrink-0">
-                        <!-- <img
-                          src="../assets/img/icons/unicons/chart-success.png"
-                          alt="chart success"
+                        <img
+                          src="../assets/img/icons/unicons/luggage-deposit-line.svg"
+                          alt="#"
                           class="rounded"
-                          /> --> 
-                          <i class="fas fa-thermometer-half bg-success text-white p-2 rounded"></i>
+                          /> 
+                          <!-- <i class="fas fa-thermometer-half bg-success text-white p-2 rounded"></i> -->
                         </div>
                         <div class="dropdown">
                           <button
@@ -463,20 +469,50 @@ data-template="vertical-menu-template-free"
                         </div>
                       </div>
                     </div>
-                    <span class="d-block mb-1">Engines Total</span>
-                    <h3 class="text-success card-title mb-2">200</h3>
-                    <small class="fw-semibold">Unit</small>
+                    <span class="d-block mb-1 fw-semibold">Jumlah Mesin</span>
+                    <h3 class="card-title mb-2 fw-bold">200</h3>
+                    <small class="">Unit</small>
                   </div>
                 </div>
               </div>
+            <div class="col-lg-6 col-md-12 col-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title d-flex align-items-start justify-content-between">
+                    <div class="avatar flex-shrink-0">
+                      <img src="../assets/img/icons/unicons/settings-5-fill.svg" alt="Credit Card" class="rounded" />
+                    </div>
+                    <div class="dropdown">
+                      <button
+                      class="btn p-0"
+                      type="button"
+                      id="cardOpt1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >
+                      <i class="bx bx-dots-vertical-rounded"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="cardOpt1">
+                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                    </div>
+                  </div>
+                </div>
+                <span class="d-block fw-semibold mb-1">Mesin Rusak</span>
+                <h3 class="card-title mb-2 fw-bold">0</h3>
+                <small class="">Unit</small>
+              </div>
+            </div>
+          </div>
               <div class="col-lg-6 col-md-12 col-6 mb-4">
                 <div class="card">
                   <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between">
                       <div class="avatar flex-shrink-0">
                         <img
-                        src="../assets/img/icons/unicons/wallet-info.png"
-                        alt="Credit Card"
+                        src="../assets/img/icons/unicons/checkbox-circle-line.svg"
+                        alt="#"
                         class="rounded"
                         />
                       </div>
@@ -497,9 +533,9 @@ data-template="vertical-menu-template-free"
                       </div>
                     </div>
                   </div>
-                  <span class="d-block mb-1">Mesin Hidup</span>
-                  <h3 class="card-title text-success text-nowrap mb-1">90</h3>
-                  <small class="fw-semibold">Unit</small>
+                  <span class="d-block fw-semibold mb-1">Mesin Hidup</span>
+                  <h3 class="card-title text-nowrap mb-1 fw-bold">90</h3>
+                  <small class="">Unit</small>
                 </div>
               </div>
             </div> 
@@ -508,7 +544,7 @@ data-template="vertical-menu-template-free"
                 <div class="card-body">
                   <div class="card-title d-flex align-items-start justify-content-between">
                     <div class="avatar flex-shrink-0">
-                      <img src="../assets/img/icons/unicons/paypal.png" alt="Credit Card" class="rounded" />
+                      <img src="../assets/img/icons/unicons/close-circle-line.svg" alt="#" class="rounded" />
                     </div>
                     <div class="dropdown">
                       <button
@@ -527,42 +563,12 @@ data-template="vertical-menu-template-free"
                     </div>
                   </div>
                 </div>
-                <span class="d-block mb-1">Mesin Mati</span>
-                <h3 class="text-danger card-title text-nowrap mb-2">110</h3>
-                <small class="fw-semibold">Unit</small>
+                <span class="d-block mb-1 fw-semibold">Mesin Mati</span>
+                <h3 class="card-title text-nowrap mb-2 fw-bold">110</h3>
+                <small class="">Unit</small>
               </div>
             </div> 
             </div> 
-            <div class="col-lg-6 col-md-12 col-6 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title d-flex align-items-start justify-content-between">
-                    <div class="avatar flex-shrink-0">
-                      <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
-                    </div>
-                    <div class="dropdown">
-                      <button
-                      class="btn p-0"
-                      type="button"
-                      id="cardOpt1"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      >
-                      <i class="bx bx-dots-vertical-rounded"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="cardOpt1">
-                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                    </div>
-                  </div>
-                </div>
-                <span class="d-block mb-1">Last Top hour</span>
-                <h3 class="card-title mb-2">$14,857</h3>
-                <small class="text-success fw-semibold">Unit</small>
-              </div>
-            </div>
-          </div>
       </div>
     </div>
 </div> 
@@ -603,7 +609,7 @@ data-template="vertical-menu-template-free"
 <script src="../assets/vendor/libs/popper/popper.js"></script>
 <script src="../assets/vendor/js/bootstrap.js"></script>
 <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 <!-- gauge chartJS -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-gauge@0.3.0/dist/chartjs-gauge.min.js"></script> -->
 <script src="../dist/libs/gauge-chart/script.js"></script>
@@ -626,5 +632,10 @@ data-template="vertical-menu-template-free"
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
 </body>
 </html>
