@@ -136,15 +136,21 @@ data-template="vertical-menu-template-free"
       
       <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item active">
-          <a href="index.html" class="menu-link">
+        <li class="menu-item">
+          <a href="main.html" class="menu-link">
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
             <div data-i18n="Analytics">Dashboard</div>
           </a>
         </li>
+        <li class="menu-item active">
+          <a href="detail.html" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-line-chart-down"></i>
+            <div data-i18n="Analytics">Statistik Mesin</div>
+          </a>
+        </li>
         
         <!-- Layouts -->
-        <li class="menu-item">
+        <!-- <li class="menu-item">
           <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-layout"></i>
             <div data-i18n="Layouts">Layouts</div>
@@ -177,12 +183,12 @@ data-template="vertical-menu-template-free"
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
         
         <!-- <li class="menu-header small text-uppercase">
           <span class="menu-header-text">Pages</span>
         </li> -->
-        <li class="menu-item">
+        <!-- <li class="menu-item">
           <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-dock-top"></i>
             <div data-i18n="Account Settings">Account Settings</div>
@@ -245,10 +251,10 @@ data-template="vertical-menu-template-free"
               </a>
             </li>
           </ul>
-        </li>
+        </li> -->
         <!-- Components -->
         
-        <li class="menu-item">
+        <!-- <li class="menu-item">
           <a
           href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
           target="_blank"
@@ -257,8 +263,8 @@ data-template="vertical-menu-template-free"
           <i class="menu-icon tf-icons bx bx-file"></i>
           <div data-i18n="Documentation">Documentation</div>
         </a>
-      </li>
-    </ul>
+      </li> -->
+      </ul>
   </aside>
   <!-- / Menu -->
   
@@ -280,30 +286,11 @@ data-template="vertical-menu-template-free"
       <!-- Search -->
       <div class="navbar-nav align-items-center">
         <div class="nav-item d-flex align-items-center">
-          <!-- <i class="bx bx-search fs-4 lh-0"></i>
-            <input
-            type="text"
-            class="form-control border-0 shadow-none"
-            placeholder="Search..."
-            aria-label="Search..."
-            /> -->
           </div>
         </div>
         <!-- /Search -->
         
         <ul class="navbar-nav flex-row align-items-center ms-auto">
-          <!-- Place this tag where you want the button to render. -->
-          <!-- <li class="nav-item lh-1 me-3">
-            <a
-            class="github-button"
-            href="https://github.com/themeselection/sneat-html-admin-template-free"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-            >Star</a
-            >
-          </li> -->
           
           <!-- User -->
           <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -377,11 +364,11 @@ data-template="vertical-menu-template-free"
         <div class="row"> 
           <h1>Mesin 1</h1>
           <div class="col-lg-12 mb-4 order-0">
-            <div class="card">
+            <div class="card border-4 border-top-0 border-bottom-0 border-end-0 border-danger"><!--  this class will change when engine turn off/on -->
               <div class="d-flex align-items-end row">
                 <div class="col-sm-7">
                   <div class="card-body">
-                    <h5 class="card-title text-primary">Mesin 1 Aktif ✅</h5>
+                    <h5 class="card-title fw-semibold">Mesin 1 Mati ✅</h5>
                     <p class="mb-4">
                       Untuk mengaktifkan atau mematikan mesin, tekan toggle switch dibawah 
                     </p>
@@ -394,25 +381,25 @@ data-template="vertical-menu-template-free"
                 <div class="col-sm-5 text-center text-sm-left">
                   <div class="card-body pb-0 px-0 px-md-4">
                     <img
-                    src="../assets/img/illustrations/man-with-laptop-light.png"
+                    src="../assets/img/illustrations/undraw_control_panel_re_y3ar.svg"
                     height="140"
                     alt="View Badge User"
-                    data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                    data-app-light-img="illustrations/man-with-laptop-light.png"
+                    data-app-dark-img="illustrations/undraw_control_panel_re_y3ar.svg"
+                    data-app-light-img="illustrations/undraw_control_panel_re_y3ar.svg"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-8 order-2 order-md-2 order-lg-1 mb-4">
+          <div class="col-12 col-lg-7 order-2 order-md-2 order-lg-1 mb-4">
             <div class="card">
               <div class="row row-bordered g-0">
-                <div class="col-md-8">
+                <div class="col-md-7">
                   <h5 class="card-header m-0 me-2 pb-3">Temperature Statistics</h5>
                   <div id="totalRevenueChart" class="px-2"></div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                   <div class="card-body">
                     <div class="text-center">
                       <div class="dropdown">
@@ -453,9 +440,9 @@ data-template="vertical-menu-template-free"
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 order-1 order-lg-1 ">
+        <div class="col-lg-5 col-md-12 col-sm-12 order-1 order-lg-1 ">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-6 mb-4"> 
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-4"> 
               <div class="card">
                 <div class="card-body">
                   <div class="card-title d-flex align-items-start justify-content-between">
@@ -490,7 +477,7 @@ data-template="vertical-menu-template-free"
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-6 mb-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
             <div class="card">
               <div class="card-body">
                 <div class="card-title d-flex align-items-start justify-content-between">
@@ -520,7 +507,7 @@ data-template="vertical-menu-template-free"
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-6 mb-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <div class="card">
             <div class="card-body">
               <div class="card-title d-flex align-items-start justify-content-between">
@@ -549,12 +536,12 @@ data-template="vertical-menu-template-free"
               </div>
             </div>
             <span class="d-block fw-semibold mb-1">Last Running Hour</span>
-            <h3 class="card-title text-nowrap mb-1 fw-bold">90</h3>
-            <small class="">Jam</small>
+            <h3 class="card-title text-nowrap mb-1 fw-bold">20.30</h3>
+            <small class="">30 Jan 2023</small>
           </div>
         </div>
       </div> 
-      <div class="col-lg-6 col-md-12 col-6 mb-4">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
         <div class="card">
           <div class="card-body">
             <div class="card-title d-flex align-items-start justify-content-between">
@@ -595,12 +582,14 @@ data-template="vertical-menu-template-free"
 <footer class="content-footer footer bg-footer-theme">
   <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
     <div class="mb-2 mb-md-0">
-      ©
+      <p class="small mb-0">
+        ©
       <script>
         document.write(new Date().getFullYear());
       </script>
-      , made with ❤️ by
+      , <b>Sneat</b> template by
       <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+      </p>
     </div> 
   </div>
 </footer>
