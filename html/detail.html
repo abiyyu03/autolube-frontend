@@ -364,16 +364,16 @@ data-template="vertical-menu-template-free"
         <div class="row"> 
           <h1>Mesin 1</h1>
           <div class="col-lg-12 mb-4 order-0">
-            <div class="card border-4 border-top-0 border-bottom-0 border-end-0 border-danger"><!--  this class will change when engine turn off/on -->
+            <div class="card border-4 border-top-0 border-bottom-0 border-end-0 border-success"><!--  this class will change when engine turn off/on -->
               <div class="d-flex align-items-end row">
                 <div class="col-sm-7">
                   <div class="card-body">
-                    <h5 class="card-title fw-semibold">Mesin 1 Mati ✅</h5>
+                    <h5 class="card-title fw-semibold">Mesin 1 Hidup ✅</h5>
                     <p class="mb-4">
                       Untuk mengaktifkan atau mematikan mesin, tekan toggle switch dibawah 
                     </p>
                     <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" role="switch" />
+                      <input class="form-check-input" type="checkbox" checked role="switch" />
                     </div>
                     <!-- <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Badges</a> -->
                   </div>
@@ -403,7 +403,7 @@ data-template="vertical-menu-template-free"
                   <div class="card-body">
                     <div class="text-center">
                       <div class="dropdown">
-                        <button
+                        <!-- <button
                         class="btn btn-sm btn-outline-primary dropdown-toggle"
                         type="button"
                         id="growthReportId"
@@ -412,18 +412,18 @@ data-template="vertical-menu-template-free"
                         aria-expanded="false"
                         >
                         Celcius
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
+                      </button> -->
+                      <!-- <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
                         <a class="dropdown-item" href="javascript:void(0);">Celcius</a>
                         <a class="dropdown-item" href="javascript:void(0);">Fahrenheit</a> 
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div> 
                 <div class="gauge-container">
                   <div class="gauge"></div> 
                 </div>
-                <div class="text-center fw-semibold mb-2">62% Company Growth</div>
+                <div class="text-center fw-semibold mb-2">Suhu normal</div>
                 
                 <svg width="0" height="0" version="1.1" class="gradient-mask" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -463,17 +463,17 @@ data-template="vertical-menu-template-free"
                       aria-haspopup="true"
                       aria-expanded="false"
                       >
-                      <i class="bx bx-dots-vertical-rounded"></i>
+                      <!-- <i class="bx bx-dots-vertical-rounded"></i> -->
                     </button>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                      <a class="dropdown-item" href="javascript:void(0);">Celcius</a>
-                      <a class="dropdown-item" href="javascript:void(0);">Fahrenheit</a>
+                      <a class="dropdown-item suhuDropdown" href="#">Celcius</a>
+                      <a class="dropdown-item suhuDropdown" href="#">Fahrenheit</a>
                     </div>
                   </div>
                 </div>
-                <span class="d-block mb-1 fw-semibold">Suhu</span>
-                <h3 class="card-title mb-2 fw-bold">40<sup>o</sup></h3>
-                <small class="">Celcius</small>
+                <span class="d-block mb-1 fw-semibold ">Suhu</span>
+                <h3 class="card-title mb-2 fw-bold" id="suhu">40<sup>o</sup></h3>
+                <small> Celcius</small>
               </div>
             </div>
           </div>
@@ -493,7 +493,7 @@ data-template="vertical-menu-template-free"
                     aria-haspopup="true"
                     aria-expanded="false"
                     >
-                    <i class="bx bx-dots-vertical-rounded"></i>
+                    <!-- <i class="bx bx-dots-vertical-rounded"></i> -->
                   </button>
                   <div class="dropdown-menu" aria-labelledby="cardOpt1">
                     <a class="dropdown-item" href="javascript:void(0);">View More</a>
@@ -513,7 +513,7 @@ data-template="vertical-menu-template-free"
               <div class="card-title d-flex align-items-start justify-content-between">
                 <div class="avatar flex-shrink-0">
                   <img
-                  src="../assets/img/icons/unicons/checkbox-circle-line.png"
+                  src="../assets/img/icons/unicons/play-circle-line.svg"
                   alt="#"
                   class="rounded"
                   />
@@ -527,7 +527,7 @@ data-template="vertical-menu-template-free"
                   aria-haspopup="true"
                   aria-expanded="false"
                   >
-                  <i class="bx bx-dots-vertical-rounded"></i>
+                  <!-- <i class="bx bx-dots-vertical-rounded"></i> -->
                 </button>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
                   <a class="dropdown-item" href="javascript:void(0);">View More</a>
@@ -546,7 +546,7 @@ data-template="vertical-menu-template-free"
           <div class="card-body">
             <div class="card-title d-flex align-items-start justify-content-between">
               <div class="avatar flex-shrink-0">
-                <img src="../assets/img/icons/unicons/close-circle-line.png" alt="#" class="rounded" />
+                <img src="../assets/img/icons/unicons/stop-circle-line.svg" alt="#" class="rounded" />
               </div>
               <div class="dropdown">
                 <button
@@ -557,7 +557,7 @@ data-template="vertical-menu-template-free"
                 aria-haspopup="true"
                 aria-expanded="false"
                 >
-                <i class="bx bx-dots-vertical-rounded"></i>
+                <!-- <i class="bx bx-dots-vertical-rounded"></i> -->
               </button>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
                 <a class="dropdown-item" href="javascript:void(0);">View More</a>

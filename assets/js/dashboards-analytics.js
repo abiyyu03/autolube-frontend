@@ -17,19 +17,19 @@
   const totalRevenueChartEl = document.querySelector('#totalRevenueChart'),
     totalRevenueChartOptions = {
       series: [
-        {
-          name: '2021',
-          data: [18, 7, 15, 29, 18, 12, 9]
-        },
+        // {
+        //   name: '2021',
+        //   data: [18, 7, 15, 29, 18, 12, 9]
+        // },
         {
           name: '2020',
-          data: [-13, -18, -9, -14, -5, -17, -15]
+          data: [11, 13, 14, 20, 25, 39]
         }
       ],
       chart: {
         height: 300,
         stacked: true,
-        type: 'bar',
+        type: 'area',
         toolbar: { show: false }
       },
       plotOptions: {

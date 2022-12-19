@@ -73,7 +73,7 @@ $(function () {
 
 
   $(document).ready(function () {
-    let temperature = 90;
+    let temperature = 40;
     $('.gauge').each(function (index, item) {
       let params = {
         initialValue: temperature,
